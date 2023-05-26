@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Management System</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+  </head>
+  <body>
+    <header>
+      <h1>Canteen Management System</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#d">Menu</a></li>
+          <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div id="menu">
+            <h2 id="h">Menu</h2>
+            <div class="menu-item">
+                <div class="item1">
+                <img src="photo/download.jpeg" alt="Burger">
+                <h3>Burger     50₹</h3>
+                <p>A classic burger with lettuce, tomato, and cheese.</p>
+                <button data-name="Burger" data-price="7.99" data-img="images/burger.jpg">Order</button></div>
+                <div class="item1">
+                    <img src="photo/download copy.jpeg" alt="Pizza">
+                    <h3>Pizza      150₹</h3>
+                    <p>A large pizza with pepperoni and mushrooms.</p>
+                    <button data-name="Pizza" data-price="14.99" data-img="images/pizza.jpg">Order</button>        
+                </div>   
+            </div>
+            <div class="menu-item">
+              <div class="item1">
+                <img src="photo/download (1).jpeg" alt="Sandwich">
+                <h3>Sandwich   50₹</h3>
+                <p>A turkey and cheese sandwich with lettuce and tomato.</p>
+                <button data-name="Sandwich" data-price="5.99" data-img="images/sandwich.jpg">Order</button></div>
+              <div class="item1">
+                <img src="photo/download (2).jpeg" alt="Fries">
+                <h3>Fries      100₹</h3>
+                <p>Classic french fries with ketchup.</p>
+                <button data-name="Fries" data-price="2.99" data-img="images/fries.jpg">Order</button></div>  
+            </div>
+          </div> 
+          
+      <div id="cart">
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total:</td>
+              <td id="cart-total">$0.00</td>
+            </tr>
+          </tfoot>
+        </table>
+        <button id="clear-cart">Clear Cart</button>
+      </div>
+      <div id="order-form">
+        <h2 id="Order_back">Ordering Form</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price">
+          <button type="submit">Place Order</button>
+       
+          <input type="hidden" id="item-name" name="item-name">
+          <input type="hidden" id="item-img" name="item-img">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Canteen Management System</p>
+    </footer>
+    <script src="main1.js"></script>
+  </body>
+</html>
